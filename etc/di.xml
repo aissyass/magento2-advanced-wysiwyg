@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /**
+ * Created: 2020
+ *
+ * @package   PHPAISS_WysiwygAdvanced
+ * @category  PHPAISS
+ * @author    Yassine AISSAOUI
+ * @copyright PHPAISS Magento 2
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Ui\Component\Wysiwyg\ConfigInterface">
+        <plugin name="phpaiss_wysiwyg_advanced" type="PHPAISS\WysiwygAdvanced\Plugin\Magento\Ui\Component\Wysiwyg\ConfigPlugin"/>
+    </type>
+</config>

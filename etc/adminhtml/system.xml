@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+ /**
+ * Created: 2020
+ *
+ * @package   PHPAISS_WysiwygAdvanced
+ * @category  PHPAISS
+ * @author    Yassine AISSAOUI
+ * @copyright PHPAISS Magento 2
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="cms">
+            <tab>general</tab>
+            <resource>Magento_Cms::config_cms</resource>
+            <group id="wysiwyg">
+                <field id="advanced_wysiwyg" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Advanced WYSIWYG</label>
+                    <comment><![CDATA[
+                        Enable or disable advanced WYSIWYG. (By PHPAISS_WysiwygAdvanced Module) </br>
+                        <strong>To activate Advanced WYSIWYG You need to set :</strong> </br>
+                        → "Enable WYSIWYG Editor" to Enable by Default. </br>
+                        → "WYSIWYG Editor" to TinyMCE 4.
+                    ]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
